@@ -44,25 +44,36 @@ htmlcov/
 .tox/
 .hypothesis/
 
-# ML Models and Data
+# ML Models and Data (excluding these for now, can restore if needed)
 models/downloads/
 models/*.bin
 models/*.safetensors
 models/*.gguf
 *.pth
 *.pt
-data/
 uploads/
 *.pdf
 *.docx
+
+# Test files and directories - EXCLUDED per user request
+tests/
+.playwright-mcp/
+run-tests.ps1
+*.spec.ts
+test_*.py
+playwright.config.ts
+playwright-report/
+test-results/
+
+# Node modules - EXCLUDED per user request
+node_modules/
+*/node_modules/
 
 # Logs
 *.log
 logs/
 
-# Environment
-.env
-.env.local
+# Environment - INCLUDED per user request (not ignored)
 
 # OS
 .DS_Store
