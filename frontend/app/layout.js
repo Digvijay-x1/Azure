@@ -20,8 +20,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="bg-[#0a0f24] text-white overflow-x-hidden transition-none"
       >
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-[#0a0f24]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(139,92,246,0.25)_0%,transparent_70%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(37,99,235,0.25)_0%,transparent_70%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.1)_100%)] mix-blend-overlay" />
+        </div>
         {children}
       </body>
     </html>
